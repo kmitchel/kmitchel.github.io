@@ -83,29 +83,31 @@ function drawChart() {
 
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'Stick Input');
-    data.addColumn('number', 'BF');
-    data.addColumn('number', 'Actual');
     data.addColumn('number', 'Actual - Center Sensitivity');
+    data.addColumn('number', 'Actual');
+    data.addColumn('number', 'BF');
+
 //    data.addColumn('number', 'Actual - No Expo');
 
 
     for (var i = 0; i <= 1; i+=0.01) {
         data.addRow([
             i,
+            acalc(i, aRate, 0, 0),
             bfcalc(i, bfRate, bfExpo, bfSuper),
             acalc(i, aRate, aExpo, aSuper),
-            acalc(i, aRate, 0, 0),
-//            acalc(i, aRate, 0, aSuper)
+            //            acalc(i, aRate, 0, aSuper)
         ]);
     }
 
     var i = 1;
     data.addRow([
         i,
+        acalc(i, aRate, 0, 0),
         bfcalc(i, bfRate, bfExpo, bfSuper),
         acalc(i, aRate, aExpo, aSuper),
-        acalc(i, aRate, 0, 0),
-//        acalc(i, aRate, 0, aSuper)
+
+        //        acalc(i, aRate, 0, aSuper)
     ]);
 
     var options = {
@@ -131,9 +133,9 @@ function drawChart() {
             maxValue: 800
         },
         series :{
-            0: { color: '#0000ff'},
+            2: { color: '#0000ff'},
             1: { color: `#ff0000`},
-            2: { color: '#aaaaaa'}
+            0: { color: '#aaaaaa'}
         }
     };
 

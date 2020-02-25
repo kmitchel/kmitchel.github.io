@@ -33,6 +33,13 @@ body {
     padding: 2px;
 }
 
+.input-title-a {
+    display:inline-block;
+    width: 150px;
+    padding: 2px;
+    font-size:small;
+}
+
 .rateBox {
     margin-top: 15px;
 }
