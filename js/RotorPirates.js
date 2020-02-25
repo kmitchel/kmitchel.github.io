@@ -84,8 +84,8 @@ function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'Stick Input');
     data.addColumn('number', 'Actual - Center Sensitivity');
-    data.addColumn('number', 'Actual');
     data.addColumn('number', 'BF');
+    data.addColumn('number', 'Actual');
 
 //    data.addColumn('number', 'Actual - No Expo');
 
