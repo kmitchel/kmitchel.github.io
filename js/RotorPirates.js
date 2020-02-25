@@ -129,6 +129,11 @@ function drawChart() {
             textStyle: {color: "#888"},
             minValue: 0,
             maxValue: 800
+        },
+        series :{
+            0: { color: '#0000ff'},
+            1: { color: `#ff0000`},
+            2: { color: '#aaaaaa'}
         }
     };
 
