@@ -85,8 +85,8 @@ function drawChart() {
     data.addColumn('number', 'Stick Input');
     data.addColumn('number', 'BF');
     data.addColumn('number', 'Actual');
-    data.addColumn('number', 'Actual - Center Sensitivity');
-    data.addColumn('number', 'Actual - No Expo');
+//    data.addColumn('number', 'Actual - Center Sensitivity');
+//    data.addColumn('number', 'Actual - No Expo');
 
 
     for (var i = 0; i <= 1; i+=0.01) {
@@ -94,8 +94,8 @@ function drawChart() {
             i,
             bfcalc(i, bfRate, bfExpo, bfSuper),
             acalc(i, aRate, aExpo, aSuper),
-            acalc(i, aRate, 0, 0),
-            acalc(i, aRate, 0, aSuper)
+//            acalc(i, aRate, 0, 0),
+//            acalc(i, aRate, 0, aSuper)
         ]);
     }
 
@@ -104,8 +104,8 @@ function drawChart() {
         i,
         bfcalc(i, bfRate, bfExpo, bfSuper),
         acalc(i, aRate, aExpo, aSuper),
-        acalc(i, aRate, 0, 0),
-        acalc(i, aRate, 0, aSuper)
+//        acalc(i, aRate, 0, 0),
+//        acalc(i, aRate, 0, aSuper)
     ]);
 
     var options = {
